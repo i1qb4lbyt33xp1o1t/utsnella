@@ -169,7 +169,7 @@ export default function Home() {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Feedback', href: '#feedback' },
+    { name: 'Feedback & Rating', href: '#feedback' },
     { name: 'Contact', href: '#contact' },
     { name: 'Chatbot', href: '#chatbot' }
   ]
@@ -268,7 +268,7 @@ export default function Home() {
           >
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
-                Hi, I'm <span className={`${darkMode ? 'text-pink-300' : 'text-pink-600'}`}>Jane Doe</span>
+                Hi, I'm <span className={`${darkMode ? 'text-pink-300' : 'text-pink-600'}`}>Nella Fathianti</span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-semibold mb-6">
                 Full Stack Developer
@@ -300,9 +300,11 @@ export default function Home() {
               >
                 <div className={`w-64 h-64 md:w-80 md:h-80 rounded-full ${darkMode ? 'bg-gray-700' : 'bg-pink-200'} overflow-hidden border-4 ${darkMode ? 'border-pink-400' : 'border-pink-500'}`}>
                   <div className="w-full h-full bg-gray-300 flex items-center justify-center">
-                    <svg className="w-32 h-32 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd"></path>
-                    </svg>
+                  <img
+            src="/profile.jpeg" // Replace with your image filename (e.g., /profile.png if it's a PNG)
+            alt="Jane Doe Profile"
+            className="w-full h-full object-cover"
+          />
                   </div>
                 </div>
                 <motion.div
@@ -350,19 +352,20 @@ export default function Home() {
                   <ul className="space-y-3">
                     <li className="flex">
                       <span className={`w-28 font-medium ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Name:</span>
-                      <span>Jane Doe</span>
+                      <span>Nella Fathianti</span>
                     </li>
                     <li className="flex">
                       <span className={`w-28 font-medium ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Email:</span>
-                      <span>jane.doe@example.com</span>
+                      <span>nella@gmail.com</span>
                     </li>
                     <li className="flex">
                       <span className={`w-28 font-medium ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Phone:</span>
-                      <span>+1 (123) 456-7890</span>
+                      <span>083737373</span>
                     </li>
                     <li className="flex">
                       <span className={`w-28 font-medium ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>Location:</span>
-                      <span>San Francisco, CA</span>
+                      <span>      Sumedang, 12 Juli 2005
+                            Manabaya, Kec. Cimanggung Kab. Sumedang</span>
                     </li>
                   </ul>
                 </div>
@@ -649,7 +652,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h4 className="font-medium">Email</h4>
-                        <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>jane.doe@example.com</p>
+                        <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>nella@gmail.com</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -660,7 +663,7 @@ export default function Home() {
                       </div>
                       <div>
                         <h4 className="font-medium">Phone</h4>
-                        <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>+1 (123) 456-7890</p>
+                        <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>08333445656</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -672,7 +675,8 @@ export default function Home() {
                       </div>
                       <div>
                         <h4 className="font-medium">Location</h4>
-                        <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>San Francisco, CA</p>
+                        <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>Sumedang, 12 Juli 2005
+                        Manabaya, Kec. Cimanggung Kab. Sumedang</p>
                       </div>
                     </li>
                   </ul>
@@ -774,7 +778,7 @@ export default function Home() {
       <footer className={`py-6 ${darkMode ? 'bg-gray-800' : 'bg-pink-100'}`}>
         <div className="container mx-auto px-4 text-center">
           <p className={`${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            © {new Date().getFullYear()} Jane Doe. All rights reserved.
+            © {new Date().getFullYear()} Nella Fathianti. All rights reserved.
           </p>
         </div>
       </footer>
